@@ -1,6 +1,6 @@
 ![mongobee](https://raw.githubusercontent.com/mongobee/mongobee/master/misc/mongobee_min.png)
 
-[![Build Status](https://travis-ci.org/mongobee/mongobee.svg?branch=master)](https://travis-ci.org/mongobee/mongobee) [![Coverity Scan Build Status](https://scan.coverity.com/projects/2721/badge.svg)](https://scan.coverity.com/projects/2721) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.mongobee/mongobee/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.mongobee/mongobee) [![Licence](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/mongobee/mongobee/blob/master/LICENSE)
+[![Build Status](https://travis-ci.com/dalet-oss/mongobee.svg?branch=master)](https://travis-ci.com/dalet-oss/mongobee)  [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.dalet-oss/mongobee/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.dalet-oss/mongobee) [![Licence](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/dalet-oss/mongobee/blob/master/LICENSE)
 ---
 
 
@@ -19,15 +19,15 @@ The goal is to keep this tool simple and comfortable to use.
 With Maven
 ```xml
 <dependency>
-  <groupId>com.github.mongobee</groupId>
+  <groupId>com.github.dalet-oss</groupId>
   <artifactId>mongobee</artifactId>
-  <version>0.13</version>
+  <version>1.0</version>
 </dependency>
 ```
 With Gradle
 ```groovy
 compile 'org.javassist:javassist:3.18.2-GA' // workaround for ${javassist.version} placeholder issue*
-compile 'com.github.mongobee:mongobee:0.13'
+compile 'com.github.dalet-oss:mongobee:1.0'
 ```
 
 ### Usage with Spring
@@ -234,9 +234,9 @@ You can exclude mongo-java-driver from **mongobee**  and use your dependency onl
 </dependency>
 
 <dependency>
-  <groupId>com.github.mongobee</groupId>
+  <groupId>com.github.dalet-oss</groupId>
   <artifactId>mongobee</artifactId>
-  <version>0.9</version>
+  <version>1.0</version>
   <exclusions>
     <exclusion>
       <groupId>org.mongodb</groupId>
@@ -245,3 +245,8 @@ You can exclude mongo-java-driver from **mongobee**  and use your dependency onl
   </exclusions>
 </dependency>
 ```
+
+## Project history
+
+This was taken as a fork of the original project https://github.com/mongobee/mongobee on 9th June 2020, as the
+original project appears to be abandoned by its owners.
