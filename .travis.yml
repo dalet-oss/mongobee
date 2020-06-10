@@ -1,2 +1,22 @@
 language: java
-dist: trusty
+os: linux
+jdk: openjdk7
+
+branches:
+  only:
+    - master
+
+deploy:
+  provider: script
+  script: './publish.sh'
+  skip_cleanup: true
+  on:
+    branch: master
+
+notifications:
+  email:
+    recipients:
+      - nsmith@dalet.com
+      - olockwood@dalet.com
+    on_success: change
+    on_failure: always
