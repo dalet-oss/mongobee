@@ -23,5 +23,11 @@ echo "Publishing version: ${VERSION}"
 #then
 #  echo "Version already published - nothing to do here"
 #else
-  mvn -P release deploy -Drevision=${VERSION}
+  # Decrypt the gpg key used for signing, and add it to gpg
+   openssl aes-256-cbc -K $encrypted_a559f7c88919_key -iv $encrypted_a559f7c88919_iv -in secret.gpg.enc -out secret.gpg -d
+  export GPG_TTY=$(tty)
+  gpg --import secret.gpg
+
+  # Build, sign and publish the artifacts
+  mvn -Prelease deploy -Drevision=${VERSION} -Dgpgkey.passphrase=${SONATYPE_GPGKEY_PASSPHRASE}
 #fi
