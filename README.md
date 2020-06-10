@@ -21,13 +21,13 @@ With Maven
 <dependency>
   <groupId>com.github.dalet-oss</groupId>
   <artifactId>mongobee</artifactId>
-  <version>1.0</version>
+  <version>1.0.3</version>
 </dependency>
 ```
 With Gradle
 ```groovy
 compile 'org.javassist:javassist:3.18.2-GA' // workaround for ${javassist.version} placeholder issue*
-compile 'com.github.dalet-oss:mongobee:1.0'
+compile 'com.github.dalet-oss:mongobee:1.0.3'
 ```
 
 ### Usage with Spring
@@ -236,7 +236,7 @@ You can exclude mongo-java-driver from **mongobee**  and use your dependency onl
 <dependency>
   <groupId>com.github.dalet-oss</groupId>
   <artifactId>mongobee</artifactId>
-  <version>1.0</version>
+  <version>1.0.3</version>
   <exclusions>
     <exclusion>
       <groupId>org.mongodb</groupId>
