@@ -38,4 +38,5 @@ echo "Publishing version: ${VERSION}"
 
   # Build, sign and publish the artifacts
   mvn -Prelease deploy -Drevision=${VERSION} -Dgpg.executable=gpg2 -Dgpgkey.passphrase=${SONATYPE_GPGKEY_PASSPHRASE}
+  mvn -Prelease nexus-staging:release -Drevision=${VERSION}
 #fi
