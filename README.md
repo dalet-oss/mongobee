@@ -250,3 +250,10 @@ You can exclude mongo-java-driver from **mongobee**  and use your dependency onl
 
 This was taken as a fork of the original project https://github.com/mongobee/mongobee on 9th June 2020, as the
 original project appears to be abandoned by its owners.
+
+#### Note for maintainers:
+
+-  Every PR & every push to `master` gets built, but not published
+-  To publish artifacts, it is necessary to specify a version number by adding an appropriate Git tag to `HEAD` with an
+   appropriate prefix.  For example, tagging the HEAD of `master` with `release/1.3.8` will cause version `1.3.8` to be
+   published on the next build.

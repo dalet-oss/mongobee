@@ -32,6 +32,11 @@
             <name>Oliver Lockwood</name>
             <email>olockwood@dalet.com</email>
         </developer>
+        <developer>
+          <id>nickcodefresh</id>
+          <name>Nick Smith</name>
+          <email>nsmith@dalet.com</email>
+        </developer>
     </developers>
 
     <distributionManagement>
