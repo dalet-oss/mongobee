@@ -3,6 +3,12 @@
 [![Build Status](https://travis-ci.com/dalet-oss/mongobee.svg?branch=master)](https://travis-ci.com/dalet-oss/mongobee)  [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.dalet-oss/mongobee/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.dalet-oss/mongobee) [![Licence](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/dalet-oss/mongobee/blob/master/LICENSE)
 ---
 
+# DEPRECATED
+
+Use MongoCK instead.  Legacy migration is pretty easy; see https://www.mongock.io/legacy-migration.
+
+
+## Old documentation
 
 **mongobee** is a Java tool which helps you to *manage changes* in your MongoDB and *synchronize* them with your application.
 The concept is very similar to other db migration tools such as [Liquibase](http://www.liquibase.org) or [Flyway](http://flywaydb.org) but *without using XML/JSON/YML files*.
